@@ -4,7 +4,51 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8d29a599-7c40-42ac-81fa-d73d76297717" name="Default Changelist" comment="" />
+    <list default="true" id="8d29a599-7c40-42ac-81fa-d73d76297717" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Attendances/AttendanceController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Attendance.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Repository/AttendanceRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Repository/AttendanceRepositoryInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Repository/PaymentStudentRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Repository/PaymentStudentRepositoryInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_07_26_075343_create_attendances_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/attendance/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/attendance/show.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/fees/paymentStudents/delete.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/fees/paymentStudents/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/fees/paymentStudents/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/fees/paymentStudents/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Classroom.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Classroom.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Grade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Grade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Student.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Student.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repository/FeeInvoicesRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repository/FeeInvoicesRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repository/FeeInvoicesRepositoryInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repository/FeeInvoicesRepositoryInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repository/ProcessingFeeRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repository/ProcessingFeeRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repository/ProcessingFeeRepositoryInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repository/ProcessingFeeRepositoryInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repository/ReceiptStudentsRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repository/ReceiptStudentsRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repository/ReceiptStudentsRepositoryInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repository/ReceiptStudentsRepositoryInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/en/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/fees/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/fees/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/fees/delete.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/fees/delete.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/fees/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/fees/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/fees/invoices/delete.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/fees/invoices/delete.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/fees/invoices/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/fees/invoices/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/fees/invoices/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/fees/invoices/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/fees/invoices/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/fees/invoices/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/fees/processing/delete.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/fees/processing/delete.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/fees/processing/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/fees/processing/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/fees/processing/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/fees/processing/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/fees/processing/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/fees/processing/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/fees/receipts/delete.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/fees/receipts/delete.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/fees/receipts/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/fees/receipts/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/fees/receipts/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/fees/receipts/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/fees/receipts/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/fees/receipts/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/students/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/students/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/main-sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/main-sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,6 +64,17 @@
         <option value="CSS File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -137,12 +192,18 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1oG2wbC7ZIXjYB271owzNiOM9L7" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -153,17 +214,17 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\SMS\resources\views\dashboard\fees\paymentStudents" />
+      <recent name="C:\xampp\htdocs\SMS\resources\views\dashboard\fees\receipts" />
+      <recent name="C:\xampp\htdocs\SMS\resources\views\livewire" />
+      <recent name="C:\xampp\htdocs\SMS\resources\views\dashboard\sections" />
+      <recent name="C:\xampp\htdocs\SMS\database\migrations" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\SMS\app\Models" />
       <recent name="C:\xampp\htdocs\SMS\app\Http\Controllers\Grades" />
       <recent name="C:\xampp\htdocs\SMS\app\Http\Controllers" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\SMS\resources\views\livewire" />
-      <recent name="C:\xampp\htdocs\SMS\resources\views\dashboard\sections" />
-      <recent name="C:\xampp\htdocs\SMS\database\migrations" />
-      <recent name="C:\xampp\htdocs\SMS\app\Models" />
-      <recent name="C:\xampp\htdocs\SMS\app\Http\Controllers\Sections" />
     </key>
   </component>
   <component name="RunManager">
@@ -269,69 +330,41 @@
       <workItem from="1624432891261" duration="117000" />
       <workItem from="1624438460078" duration="1777000" />
       <workItem from="1624440269128" duration="1100000" />
+      <workItem from="1624563780897" duration="1805000" />
+      <workItem from="1624565624739" duration="1779000" />
+      <workItem from="1624567439652" duration="1471000" />
+      <workItem from="1624732630833" duration="1775000" />
+      <workItem from="1624734439005" duration="1797000" />
+      <workItem from="1624736309205" duration="922000" />
+      <workItem from="1624778253409" duration="1777000" />
+      <workItem from="1624780065074" duration="995000" />
+      <workItem from="1624866141129" duration="1776000" />
+      <workItem from="1624867951140" duration="1780000" />
+      <workItem from="1624869796288" duration="1646000" />
+      <workItem from="1624914434251" duration="11000" />
+      <workItem from="1625294333317" duration="989000" />
+      <workItem from="1625296812321" duration="1774000" />
+      <workItem from="1625298625479" duration="714000" />
+      <workItem from="1625389108659" duration="12000" />
+      <workItem from="1625953477761" duration="9000" />
+      <workItem from="1625994452456" duration="209000" />
+      <workItem from="1625996577456" duration="58000" />
+      <workItem from="1625996865231" duration="15000" />
+      <workItem from="1626076559072" duration="25000" />
+      <workItem from="1626077136620" duration="6000" />
+      <workItem from="1626082100870" duration="44000" />
+      <workItem from="1626246884442" duration="5047000" />
+      <workItem from="1626554294797" duration="360000" />
+      <workItem from="1626642259240" duration="29000" />
+      <workItem from="1627285923775" duration="4758000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="664" y="340" key="#Notifications" timestamp="1624432856522">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="664" y="340" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1624432856522" />
-    <state x="765" y="200" key="#com.intellij.ide.util.MemberChooser" timestamp="1624392343482">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="765" y="200" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1624392343482" />
-    <state x="695" y="310" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1624390211871">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="695" y="310" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1624390211871" />
-    <state x="761" y="238" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1622406524309">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="761" y="238" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1622406524309" />
-    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1624438979584">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1624438979584" />
-    <state x="718" y="370" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1619556465227">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="718" y="370" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1040@0.0.1920.1040" timestamp="1619556465227" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1623694384658">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1623694384658" />
-    <state x="770" y="227" width="390" height="586" key="NewPhpClassDialog" timestamp="1624390212875">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="770" y="227" width="390" height="586" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1624390212875" />
-    <state x="794" y="439" key="NewPhpFileDialog" timestamp="1624390143276">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="794" y="439" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1624390143276" />
-    <state x="461" y="165" key="SettingsEditor" timestamp="1623099528418">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1623099528418" />
-    <state x="566" y="130" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1623875345747">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="566" y="130" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1623875345747" />
-    <state x="1200" y="52" width="1349" height="1006" maximized="true" key="dock-window-1" timestamp="1623054956561">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="1200" y="52" width="1349" height="1006" maximized="true" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1623054956561" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1619558631847">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1619558631847" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1624440780987">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1624440780987" />
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -350,6 +383,21 @@
           <url>file://$PROJECT_DIR$/resources/views/dashboard/sections/index.blade.php</url>
           <line>253</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/dashboard/sections/index.blade.php</url>
+          <line>27</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/dashboard/attendance/index.blade.php</url>
+          <line>80</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/dashboard/attendance/show.blade.php</url>
+          <line>32</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

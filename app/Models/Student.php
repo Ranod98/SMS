@@ -71,4 +71,23 @@ class Student extends Model
 
     }//end of image
 
+
+    public function studentAccount()
+    {
+        return $this->hasMany(StudentAccount::class, 'student_id');
+
+    }//end studentAccount
+
+    public function paymentStudent(){
+
+        return $this->hasMany(PaymentStudent::class, 'student_id');
+
+    }//end of payment student relation
+
+    public function attendances(){
+
+        return $this->hasMany(Attendance::class);
+
+    }//end of relation
+
 }//end of student

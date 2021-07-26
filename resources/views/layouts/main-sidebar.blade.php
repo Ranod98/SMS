@@ -106,8 +106,11 @@
                             <div class="clearfix"></div>
                         </a>
                         <ul id="accounts-menu" class="collapse" data-parent="#sidebarnav">
-                            <li> <a href="projects.html">@lang('main.accounts_list')</a> </li>
-
+                            <li> <a href="{{route('fees.index')}}">@lang('main.fees_list')</a> </li>
+                            <li> <a href="{{route('feesInvoices.index')}}">@lang('main.fees_invoices')</a> </li>
+                            <li> <a href="{{route('receiptStudents.index')}}">@lang('main.receipt_list')</a> </li>
+                            <li> <a href="{{route('processingFees.index')}}">@lang('main.processing_fees')</a> </li>
+                            <li> <a href="{{route('paymentStudents.index')}}">@lang('main.payment_students')</a> </li>
                         </ul>
                     </li>
                     <!-- menu  attendance-->
@@ -118,7 +121,7 @@
                             <div class="clearfix"></div>
                         </a>
                         <ul id="attendance-menu" class="collapse" data-parent="#sidebarnav">
-                            <li> <a href="login.html">@lang('main.attendance_list')</a> </li>
+                            <li> <a href="{{route('attendances.index')}}">@lang('main.attendance_list')</a> </li>
 
                         </ul>
                     </li>

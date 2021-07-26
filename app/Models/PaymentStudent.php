@@ -1,0 +1,17 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class PaymentStudent extends Model
+{
+
+    protected $guarded;
+
+    public function student(){
+
+        return $this->belongsTo(Student::class);
+    }//end of student
+
+}//end of model

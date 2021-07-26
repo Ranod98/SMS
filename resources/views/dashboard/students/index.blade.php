@@ -63,6 +63,11 @@
                                                     <a href="{{route('students.edit',$student->id)}}" class="btn btn-info btn-sm" role="button" aria-pressed="true"><i class="fa fa-edit"></i></a>
                                                     <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#Delete_Student{{ $student->id }}" title="{{ trans('grade.delete') }}"><i class="fa fa-trash"></i></button>
                                                     <a href="{{route('students.show',$student->id)}}" class="btn btn-warning btn-sm" role="button" aria-pressed="true"><i class="far fa-eye"></i></a>
+                                                    <a href="{{route('feesInvoices.show',$student->id)}}" class="btn btn-secondary btn-sm" role="button" aria-pressed="true"><i class="fa fa-money"></i></a>
+                                                    <a href="{{route('receiptStudents.show',$student->id)}}" class="btn btn-primary btn-sm" role="button" aria-pressed="true"><i class="fa fa-hand-grab-o"></i></a>
+                                                    <a href="{{route('processingFees.show',$student->id)}}" class="btn btn-dark btn-sm" role="button" aria-pressed="true"><i class="fa fa-hand-spock-o"></i></a>
+                                                    <a href="{{route('paymentStudents.show',$student->id)}}" class="btn btn-success btn-sm" role="button" aria-pressed="true"><i class="fa fa-hand-lizard-o"></i></a>
+
                                                 </td>
                                             </tr>
                                         @include('dashboard.students.delete')

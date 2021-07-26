@@ -72,10 +72,23 @@ Route::group(
 
         Route::resource('promotions', 'PromotionController');
         Route::resource('graduated', 'GraduatedController');
+    });
 
+    //fees route
 
+    Route::group(['namespace'=>'Fees'],function (){
+        Route::resource('fees', 'FeeController');
+        Route::resource('feesInvoices', 'FeeInvoiceController');
+        Route::resource('receiptStudents', 'ReceiptStudentController');
+        Route::resource('processingFees', 'ProcessingFeeController');
+        Route::resource('paymentStudents', 'PaymentStudentController');
+    });
+
+    Route::group(['namespace'=>'Attendances'],function (){
+        Route::resource('attendances', 'AttendanceController');
 
     });
+
 
 
 });

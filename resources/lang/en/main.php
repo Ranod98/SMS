@@ -146,8 +146,25 @@ return [
 
     'graduate_students' => 'Graduate Students',
     'manage_graduate_students' => 'Manage Graduate Students',
-    '' => '',
-    '' => '',
+
+
+
+    'fees_list' => 'Fees List',
+    'fees' => 'Fees',
+    'fees_invoices'=>'Fees Invoices',
+    'receipt_list'=>'Receipt List',
+    'processing_fees'=>'Processing Fees',
+    'receipt_students'=>'Receipt Students',
+
+    'payment_students'=>'Payment Students',
+    'date'=>'Date',
+    'absence'=>'Absence',
+    'presence'=>'Presence',
+    ''=>'',
+    ''=>'',
+    ''=>'',
+    ''=>'',
+    ''=>'',
 
 
 
