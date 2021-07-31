@@ -90,6 +90,12 @@ Route::group(
     });
 
 
+    Route::group(['namespace'=>'Subject'],function (){
+        Route::resource('subjects', 'SubjectController');
+
+    });
+
+
 
 });
 

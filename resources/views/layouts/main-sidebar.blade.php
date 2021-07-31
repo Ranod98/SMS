@@ -129,6 +129,19 @@
                     <!-- menu  attendance-->
                     <li>
                         <a href="javascript:void(0);" data-toggle="collapse" data-target="#exam-menu">
+                            <div class="pull-left"><i class="fas fa-book-open"></i><span class="right-nav-text">@lang('main.subjects')</span></div>
+                            <div class="pull-right"><i class="ti-plus"></i></div>
+                            <div class="clearfix"></div>
+                        </a>
+                        <ul id="exam-menu" class="collapse" data-parent="#sidebarnav">
+                            <li> <a href="{{route('subjects.index')}}">@lang('main.subject_list')</a> </li>
+
+                        </ul>
+                    </li>
+
+                    <!-- menu  attendance-->
+                    <li>
+                        <a href="javascript:void(0);" data-toggle="collapse" data-target="#exam-menu">
                             <div class="pull-left"><i class="fas fa-book-open"></i><span class="right-nav-text">@lang('main.exams')</span></div>
                             <div class="pull-right"><i class="ti-plus"></i></div>
                             <div class="clearfix"></div>

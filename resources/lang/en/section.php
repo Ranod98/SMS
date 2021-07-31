@@ -24,6 +24,7 @@ return [
     'active'  => 'Active',
     'unactive'=>'Unactive',
     'teacher_name' => 'Teacher Name',
+    'subject_name' => 'Subject Name',
 
 
 

@@ -5,47 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d29a599-7c40-42ac-81fa-d73d76297717" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Attendances/AttendanceController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Attendance.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Repository/AttendanceRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Repository/AttendanceRepositoryInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Repository/PaymentStudentRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Repository/PaymentStudentRepositoryInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_07_26_075343_create_attendances_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/attendance/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/attendance/show.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/fees/paymentStudents/delete.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/fees/paymentStudents/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/fees/paymentStudents/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/fees/paymentStudents/show.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Subject/SubjectController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Subject.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Repository/SubjectRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Repository/SubjectRepositoryInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_07_31_073332_create_subjects_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/subjects/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/subjects/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/subjects/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Classroom.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Classroom.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Grade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Grade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Student.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Student.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repository/FeeInvoicesRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repository/FeeInvoicesRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repository/FeeInvoicesRepositoryInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repository/FeeInvoicesRepositoryInterface.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repository/ProcessingFeeRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repository/ProcessingFeeRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repository/ProcessingFeeRepositoryInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repository/ProcessingFeeRepositoryInterface.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repository/ReceiptStudentsRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repository/ReceiptStudentsRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repository/ReceiptStudentsRepositoryInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repository/ReceiptStudentsRepositoryInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/en/grades.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/grades.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/en/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/main.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/fees/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/fees/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/fees/delete.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/fees/delete.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/fees/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/fees/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/fees/invoices/delete.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/fees/invoices/delete.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/fees/invoices/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/fees/invoices/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/en/section.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/section.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/dashboard/fees/invoices/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/fees/invoices/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/fees/invoices/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/fees/invoices/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/fees/processing/delete.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/fees/processing/delete.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/fees/processing/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/fees/processing/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/fees/processing/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/fees/processing/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/fees/processing/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/fees/processing/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/fees/receipts/delete.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/fees/receipts/delete.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/fees/receipts/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/fees/receipts/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/fees/receipts/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/fees/receipts/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/fees/receipts/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/fees/receipts/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/students/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/students/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/main-sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/main-sidebar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -357,6 +330,8 @@
       <workItem from="1626554294797" duration="360000" />
       <workItem from="1626642259240" duration="29000" />
       <workItem from="1627285923775" duration="4758000" />
+      <workItem from="1627464564902" duration="640000" />
+      <workItem from="1627716774798" duration="2598000" />
     </task>
     <servers />
   </component>
@@ -398,6 +373,11 @@
           <url>file://$PROJECT_DIR$/resources/views/dashboard/attendance/show.blade.php</url>
           <line>32</line>
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/dashboard/subjects/create.blade.php</url>
+          <line>26</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
