@@ -95,6 +95,11 @@ Route::group(
 
     });
 
+    Route::group(['namespace'=>'Exams'],function (){
+        Route::resource('exams', 'ExamController');
+
+    });
+
 
 
 });

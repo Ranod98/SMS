@@ -5,20 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d29a599-7c40-42ac-81fa-d73d76297717" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Subject/SubjectController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Subject.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Repository/SubjectRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Repository/SubjectRepositoryInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_07_31_073332_create_subjects_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/subjects/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/subjects/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/subjects/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Exams/ExamController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Exam.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Repository/ExamRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Repository/ExamRepositoryInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_08_03_081613_create_exams_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/lang/en/exams.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/exams/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/exams/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/exams/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/en/grades.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/grades.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/en/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/main.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/en/section.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/section.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/fees/invoices/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/fees/invoices/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/main-sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/main-sidebar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -178,7 +176,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/dashboard/exams" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
@@ -188,11 +186,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\SMS\resources\views\dashboard\exams" />
       <recent name="C:\xampp\htdocs\SMS\resources\views\dashboard\fees\paymentStudents" />
       <recent name="C:\xampp\htdocs\SMS\resources\views\dashboard\fees\receipts" />
       <recent name="C:\xampp\htdocs\SMS\resources\views\livewire" />
       <recent name="C:\xampp\htdocs\SMS\resources\views\dashboard\sections" />
-      <recent name="C:\xampp\htdocs\SMS\database\migrations" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\SMS\app\Models" />
@@ -331,7 +329,9 @@
       <workItem from="1626642259240" duration="29000" />
       <workItem from="1627285923775" duration="4758000" />
       <workItem from="1627464564902" duration="640000" />
-      <workItem from="1627716774798" duration="2598000" />
+      <workItem from="1627716774798" duration="2815000" />
+      <workItem from="1627887922265" duration="17000" />
+      <workItem from="1627978551792" duration="1987000" />
     </task>
     <servers />
   </component>

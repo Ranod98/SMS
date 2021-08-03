@@ -168,7 +168,7 @@ return [
     'subject_name_ku'=>'Subject Name Kurdish',
     'delete_subject'=>'Delete Subject',
     'edit_subject'=>'Edit Subject',
-    ''=>'',
+
     ''=>'',
     ''=>'',
     ''=>'',

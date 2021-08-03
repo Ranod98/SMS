@@ -128,12 +128,12 @@
 
                     <!-- menu  attendance-->
                     <li>
-                        <a href="javascript:void(0);" data-toggle="collapse" data-target="#exam-menu">
+                        <a href="javascript:void(0);" data-toggle="collapse" data-target="#subject-menu">
                             <div class="pull-left"><i class="fas fa-book-open"></i><span class="right-nav-text">@lang('main.subjects')</span></div>
                             <div class="pull-right"><i class="ti-plus"></i></div>
                             <div class="clearfix"></div>
                         </a>
-                        <ul id="exam-menu" class="collapse" data-parent="#sidebarnav">
+                        <ul id="subject-menu" class="collapse" data-parent="#sidebarnav">
                             <li> <a href="{{route('subjects.index')}}">@lang('main.subject_list')</a> </li>
 
                         </ul>
@@ -147,7 +147,7 @@
                             <div class="clearfix"></div>
                         </a>
                         <ul id="exam-menu" class="collapse" data-parent="#sidebarnav">
-                            <li> <a href="login.html">@lang('main.exams_list')</a> </li>
+                            <li> <a href="{{route('exams.index')}}">@lang('main.exams_list')</a> </li>
 
                         </ul>
                     </li>
