@@ -5,6 +5,9 @@ namespace App\Repository;
 
 
 use App\Models\Exam;
+use App\Models\Grade;
+use App\Models\Subject;
+use App\Models\Teacher;
 use Illuminate\Database\Eloquent\Model;
 use mysql_xdevapi\Exception;
 
@@ -21,16 +24,28 @@ class ExamRepository implements ExamRepositoryInterface
 
     public function create()
     {
-        return view('dashboard.exams.create');
+
+        $subjects = Subject::all();
+        $grades = Grade::all();
+        $teachers = Teacher::all();
+        return view('dashboard.exams.create',compact('subjects','grades','teachers'));
     }//end of create
 
     public function store($request)
     {
+
         try {
             $exams = new Exam();
             $exams->name = ['en' => $request->name_en, 'ar' => $request->name_ar,'ku' => $request->name_ku];
-            $exams->term = $request->term;
-            $exams->academic_year = $request->academic_year;
+            $exams->subject_id = $request->subject_id;
+            $exams->grade_id = $request->grade_id;
+            $exams->classroom_id = $request->class_id;
+            $exams->section_id = $request->section_id;
+            $exams->teacher_id = $request->teacher_id;
+
+
+
+
             $exams->save();
             toastr()->success(trans('message.success'));
             return redirect()->route('exams.index');
@@ -43,7 +58,11 @@ class ExamRepository implements ExamRepositoryInterface
     {
         $exam = Exam::findOrFail($id);
 
-        return view('dashboard.exams.edit',compact('exam'));
+        $subjects = Subject::all();
+        $grades = Grade::all();
+        $teachers = Teacher::all();
+
+        return view('dashboard.exams.edit',compact('exam','subjects','grades','teachers'));
     }//end of exam
 
     public function update($request, $id)
@@ -52,8 +71,13 @@ class ExamRepository implements ExamRepositoryInterface
             $exams =Exam::findOrFail($id);
 
             $exams->name = ['en' => $request->name_en, 'ar' => $request->name_ar,'ku' => $request->name_ku];
-            $exams->term = $request->term;
-            $exams->academic_year = $request->academic_year;
+            $exams->subject_id = $request->subject_id;
+            $exams->grade_id = $request->grade_id;
+            $exams->classroom_id = $request->class_id;
+            $exams->section_id = $request->section_id;
+            $exams->teacher_id = $request->teacher_id;
+
+
             $exams->save();
             toastr()->success(trans('message.update'));
             return redirect()->route('exams.index');

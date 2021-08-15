@@ -5,20 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d29a599-7c40-42ac-81fa-d73d76297717" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Exams/ExamController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Exam.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Repository/ExamRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Repository/ExamRepositoryInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_08_03_081613_create_exams_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/en/exams.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/exams/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/exams/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/exams/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/en/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/main.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/main-sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/main-sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Exam.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Exam.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repository/ExamRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repository/ExamRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_08_03_081613_create_exams_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_08_03_081613_create_exams_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/attendance/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/attendance/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/exams/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/exams/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/exams/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/exams/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/exams/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/exams/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,7 +170,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/dashboard/exams" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
@@ -332,6 +326,8 @@
       <workItem from="1627716774798" duration="2815000" />
       <workItem from="1627887922265" duration="17000" />
       <workItem from="1627978551792" duration="1987000" />
+      <workItem from="1628022383002" duration="9000" />
+      <workItem from="1629013606320" duration="1740000" />
     </task>
     <servers />
   </component>

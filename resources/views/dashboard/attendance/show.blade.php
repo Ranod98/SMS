@@ -91,14 +91,14 @@
 
                                                     <label class="block text-gray-500 font-semibold sm:border-r sm:pr-4">
                                                         <input name="attendances[{{ $student->id }}]" disabled
-                                                               {{ $student->attendances()->first()->attendance_status == 1 ? 'checked' : '' }}
+                                                               {{ $student->attendances()->where('attendance_date',date('Y-m-d'))->first()->attendance_status == 1 ? 'checked' : '' }}
                                                                class="leading-tight" type="radio" value="presence">
                                                         <span class="text-success">@lang('main.presence')</span>
                                                     </label>
 
                                                     <label class="ml-4 block text-gray-500 font-semibold">
                                                         <input name="attendances[{{ $student->id }}]" disabled
-                                                               {{ $student->attendances()->first()->attendance_status == 0 ? 'checked' : '' }}
+                                                               {{ $student->attendances()->where('attendance_date',date('Y-m-d'))->first()->attendance_status == 0 ? 'checked' : '' }}
                                                                class="leading-tight" type="radio" value="absence">
                                                         <span class="text-danger">@lang('main.absence')</span>
                                                     </label>

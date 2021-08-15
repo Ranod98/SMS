@@ -65,23 +65,64 @@
                                 <br>
 
                                 <div class="form-row">
-                                    <div class="form-group col">
-                                        <label for="title">@lang('exams.term')</label>
-                                        <input type="number" name="term" class="form-control">
-                                    </div>
-                                    <div class="form-group col">
-                                        <label for="academic_year">{{trans('students.academic_year')}} : <span class="text-danger">*</span></label>
-                                        <select class="custom-select mr-sm-2" name="academic_year">
-                                            <option selected disabled>{{trans('parent.choose')}}...</option>
-                                            @php
-                                                $current_year = date("Y");
-                                            @endphp
-                                            @for($year=$current_year; $year<=$current_year +1 ;$year++)
-                                                <option value="{{ $year}}">{{ $year }}</option>
-                                            @endfor
-                                        </select>
+
+                                    <div class="col">
+                                        <div class="form-group">
+                                            <label for="Grade_id">@lang('section.subject_name') : <span class="text-danger">*</span></label>
+                                            <select class="custom-select mr-sm-2" name="subject_id">
+                                                <option selected disabled>@lang('parent.choose')...</option>
+                                                @foreach($subjects as $subject)
+                                                    <option  value="{{ $subject->id }}">{{ $subject->name }}</option>
+                                                @endforeach
+                                            </select>
+                                        </div>
                                     </div>
 
+                                    <div class="col">
+                                        <div class="form-group">
+                                            <label for="Grade_id">@lang('teachers.teacher_name') : <span class="text-danger">*</span></label>
+                                            <select class="custom-select mr-sm-2" name="teacher_id">
+                                                <option selected disabled>@lang('parent.choose')...</option>
+                                                @foreach($teachers as $teacher)
+                                                    <option  value="{{ $teacher->id }}">{{ $teacher->name }}</option>
+                                                @endforeach
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="form-row">
+
+                                    <div class="col">
+                                        <div class="form-group">
+                                            <label for="Grade_id">{{trans('students.grade')}} : <span class="text-danger">*</span></label>
+                                            <select class="custom-select mr-sm-2" name="grade_id">
+                                                <option selected disabled>{{trans('parent.choose')}}...</option>
+                                                @foreach($grades as $grade)
+                                                    <option  value="{{ $grade->id }}">{{ $grade->Name }}</option>
+                                                @endforeach
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="col">
+                                        <div class="form-group">
+                                            <label for="Classroom_id">{{trans('students.classrooms')}} : <span class="text-danger">*</span></label>
+                                            <select class="custom-select mr-sm-2" name="class_id">
+
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="col">
+                                        <div class="form-group">
+                                            <label for="section_id">{{trans('students.section')}} : </label>
+                                            <select class="custom-select mr-sm-2" name="section_id">
+
+                                            </select>
+                                        </div>
+                                    </div>
                                 </div>
                                 <button class="btn btn-success btn-sm nextBtn btn-lg pull-right" type="submit">@lang('section.save')</button>
                             </form>
@@ -120,4 +161,34 @@
             });
         });
     </script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('select[name="class_id"]').on('change', function () {
+                var class_id = $(this).val();
+                console.log(class_id)
+                if (class_id) {
+                    $.ajax({
+                        url: "{{ URL::to('getSections') }}/" + class_id,
+                        type: "GET",
+                        dataType: "json",
+                        success: function (data) {
+                            $('select[name="section_id"]').empty();
+                            $('select[name="section_id"]').append('<option selected disabled >{{trans('parent.choose')}}...</option>');
+
+                            $.each(data, function (key, value) {
+                                $('select[name="section_id"]').append('<option value="' + key + '">' + value + '</option>');
+                            });
+                        },
+                    });
+                }
+                else {
+                    console.log('AJAX load did not work');
+                }
+            });
+        });
+    </script>
+
+
 @endsection

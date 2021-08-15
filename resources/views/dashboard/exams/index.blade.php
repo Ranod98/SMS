@@ -41,8 +41,11 @@
                                         <tr>
                                             <th>#</th>
                                             <th>@lang('exams.exam_name')</th>
-                                            <th>@lang('exams.term')</th>
-                                            <th>@lang('students.academic_year')</th>
+                                            <th>@lang('section.subject_name')</th>
+                                            <th>@lang('teachers.teacher_name')</th>
+                                            <th>{{trans('students.grade')}}</th>
+                                            <th>{{trans('students.classrooms')}}</th>
+                                            <th>{{trans('students.section')}}</th>
                                             <th>@lang('section.processes')</th>
                                         </tr>
                                         </thead>
@@ -51,8 +54,11 @@
                                             <tr>
                                                 <td>{{$loop->iteration}}</td>
                                                 <td>{{$exam->name}}</td>
-                                                <td>{{$exam->term}}</td>
-                                                <td>{{$exam->academic_year}}</td>
+                                                <td>{{$exam->subject->name}}</td>
+                                                <td>{{$exam->teacher->name}}</td>
+                                                <td>{{$exam->grade->Name}}</td>
+                                                <td>{{$exam->classroom->name}}</td>
+                                                <td>{{$exam->section->name}}</td>
                                                 <td>
                                                     <a href="{{route('exams.edit',$exam->id)}}" class="btn btn-info btn-sm" role="button" aria-pressed="true"><i class="fa fa-edit"></i></a>
                                                     <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#delete_subject{{ $exam->id }}" title="حذف"><i class="fa fa-trash"></i></button>
